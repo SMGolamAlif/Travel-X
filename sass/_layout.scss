@@ -1,0 +1,114 @@
+.container{
+   max-width: 120rem;
+   margin: 8rem auto; 
+   background-color: var(--color-Grey-light-2);
+   box-shadow: var(--shadow-dark); 
+   min-height: 50rem;
+
+   @media only screen and (max-width: $bp-largest) {
+      margin: 0;    
+      max-width: 100%;
+      width: 100%;
+   }
+   @media only screen and (max-width: $bp-large) {
+      
+   }
+
+}
+.header{
+   font-size: 1.4rem; 
+   height: 7rem;
+   background-color: white;
+   border-bottom: var(--line);  
+
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+
+   @media only screen and (max-width: $bp-smallest) {
+      flex-wrap: wrap; 
+      height: 11rem;
+      align-content: space-around;
+   }
+} 
+.content{
+   display: flex;
+   
+   @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+   }
+}
+.sidebar{
+   background-color: var(--color-Grey-dark-1);   
+
+   flex:0 0 18%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.hotel-view{
+   background-color: white;
+
+   //testing 
+   flex: 1;  
+}
+
+.details{
+   font-size: 1.4rem;
+   display: flex; 
+   padding: 4.5rem;  
+   background-color: var(--color-Grey-light-3) ;      
+   border-bottom: var(--line); 
+
+   @media only screen and (max-width: $bp-medium) {
+      
+      padding: 3rem;
+   }
+   @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+
+   }
+}
+.description{
+   font-size: 2.4rem; 
+   background-color: #fff;
+   box-shadow:  var(--shadow-light);  
+   flex: 0 0 60%; 
+   margin-right: 4.5rem;
+   padding: 3rem;
+   border-radius: 10px;
+   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+   transition: all .4s;
+
+   &:hover{
+      transform: scale(1.075);  
+   }
+
+   @media only screen and (max-width: $bp-medium) {
+      
+      padding: 2rem;
+      margin-right: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+         margin-right: 0;
+         margin-bottom: 3rem;
+      }
+}
+.user-reviews{
+   font-size: 2.4rem ;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.review{
+   border-radius:10px; 
+   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+   transition: all .4s;
+
+   &:hover{
+      transform: scale(1.1); 
+   }
+}
